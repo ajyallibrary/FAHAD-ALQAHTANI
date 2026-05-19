@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Fahad AlQahtani – Administrative & HR Professional based in Riyadh, Saudi Arabia." />
+  <title>Fahad AlQahtani | Administrative Professional</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== NAV ===== -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <div class="nav-logo">FA</div>
+      <ul class="nav-links">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#hero" class="mm-link">Home</a>
+      <a href="#about" class="mm-link">About</a>
+      <a href="#experience" class="mm-link">Experience</a>
+      <a href="#skills" class="mm-link">Skills</a>
+      <a href="#education" class="mm-link">Education</a>
+      <a href="#contact" class="mm-link">Contact</a>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section id="hero">
+    <div class="hero-bg-lines"></div>
+    <div class="hero-grain"></div>
+    <div class="hero-container">
+      <div class="hero-text reveal-left">
+        <p class="hero-eyebrow">Administrative &amp; Operations Professional</p>
+        <h1 class="hero-name">Fahad<br/><span class="gold">AlQahtani</span></h1>
+        <p class="hero-summary">
+          A results-driven administrative leader with over four years of experience 
+          streamlining operations, elevating office efficiency, and bridging 
+          cross-functional teams — rooted in Riyadh, shaping the future of Saudi enterprise.
+        </p>
+        <div class="hero-cta">
+          <a href="#contact" class="btn-primary">Get In Touch</a>
+          <a href="#experience" class="btn-ghost">View Experience</a>
+        </div>
+        <div class="hero-contacts">
+          <a href="tel:+966555555555" class="hc-item">
+            <svg viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
+            +966 555 555 555
+          </a>
+          <a href="mailto:fahad.alqahtani.hr@gmail.com" class="hc-item">
+            <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+            fahad.alqahtani.hr@gmail.com
+          </a>
+          <span class="hc-item">
+            <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+            Riyadh, Saudi Arabia
+          </span>
+        </div>
+      </div>
+      <div class="hero-image reveal-right">
+        <div class="img-frame">
+          <img src="data:image/png;base64,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" alt="Fahad AlQahtani" />
+          <div class="img-deco-ring"></div>
+          <div class="img-deco-corner"></div>
+        </div>
+        <div class="hero-badge">
+          <span class="badge-num">4+</span>
+          <span class="badge-label">Years of<br/>Excellence</span>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <p class="sec-eyebrow">Who I Am</p>
+        <h2 class="sec-title">Professional <span class="gold">Overview</span></h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text reveal-left">
+          <p>
+            A motivated and meticulous administrative professional with a proven record of 
+            orchestrating seamless office operations, nurturing corporate relationships, and 
+            delivering operational excellence across Riyadh's competitive business landscape.
+          </p>
+          <p>
+            Holding a Bachelor of Business Administration from King Saud University, I combine 
+            strong academic foundations with hands-on expertise in office coordination, HR support, 
+            and customer success — delivering measurable impact at every level.
+          </p>
+          <div class="about-tags">
+            <span class="tag">Corporate Administration</span>
+            <span class="tag">HR Support</span>
+            <span class="tag">Customer Relations</span>
+            <span class="tag">Business Operations</span>
+          </div>
+        </div>
+        <div class="about-stats reveal-right">
+          <div class="stat-card">
+            <span class="stat-num gold">4+</span>
+            <span class="stat-label">Years Experience</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num gold">2</span>
+            <span class="stat-label">Leading Companies</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num gold">5</span>
+            <span class="stat-label">Certifications</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num gold">2</span>
+            <span class="stat-label">Languages</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EXPERIENCE ===== -->
+  <section id="experience" class="dark-section">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <p class="sec-eyebrow">Career Journey</p>
+        <h2 class="sec-title">Professional <span class="gold">Experience</span></h2>
+      </div>
+      <div class="timeline">
+
+        <div class="tl-item reveal-left">
+          <div class="tl-dot"></div>
+          <div class="tl-line"></div>
+          <div class="tl-card">
+            <div class="tl-header">
+              <div>
+                <h3 class="tl-title">Administrative Coordinator</h3>
+                <p class="tl-company">Al Noor Trading Company</p>
+              </div>
+              <span class="tl-date">2023 – Present</span>
+            </div>
+            <p class="tl-location">📍 Riyadh, Saudi Arabia</p>
+            <ul class="tl-list">
+              <li>Directed end-to-end daily administrative operations, ensuring smooth documentation workflows and maintaining rigorous accuracy in all company records.</li>
+              <li>Spearheaded scheduling and coordination of executive meetings, streamlining internal communications across departments.</li>
+              <li>Produced high-quality reports and business correspondence, supporting strategic decision-making at the management level.</li>
+              <li>Provided cross-functional support to HR and Customer Service divisions, fostering interdepartmental cohesion.</li>
+            </ul>
+            <div class="tl-tags">
+              <span>Office Management</span>
+              <span>Documentation</span>
+              <span>HR Support</span>
+              <span>Reporting</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="tl-item reveal-right">
+          <div class="tl-dot"></div>
+          <div class="tl-card">
+            <div class="tl-header">
+              <div>
+                <h3 class="tl-title">Customer Service Representative</h3>
+                <p class="tl-company">Future Gate Solutions</p>
+              </div>
+              <span class="tl-date">2021 – 2023</span>
+            </div>
+            <p class="tl-location">📍 Riyadh, Saudi Arabia</p>
+            <ul class="tl-list">
+              <li>Delivered professional, prompt resolution of customer inquiries and service requests, consistently achieving high satisfaction scores.</li>
+              <li>Maintained and updated comprehensive customer records through accurate data entry and CRM management.</li>
+              <li>Collaborated proactively with team members to identify service gaps and implement targeted improvement initiatives.</li>
+              <li>Built lasting client relationships through empathetic, solution-oriented communication.</li>
+            </ul>
+            <div class="tl-tags">
+              <span>Customer Success</span>
+              <span>CRM</span>
+              <span>Data Entry</span>
+              <span>Team Collaboration</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section id="skills">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <p class="sec-eyebrow">Capabilities</p>
+        <h2 class="sec-title">Core <span class="gold">Skills</span></h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skills-col reveal-left">
+          <h4 class="skills-group-title">Professional Skills</h4>
+          <div class="skill-bar-item" data-pct="92">
+            <div class="sb-top"><span>Administrative Support</span><span class="sb-pct">92%</span></div>
+            <div class="sb-track"><div class="sb-fill"></div></div>
+          </div>
+          <div class="skill-bar-item" data-pct="88">
+            <div class="sb-top"><span>Communication Skills</span><span class="sb-pct">88%</span></div>
+            <div class="sb-track"><div class="sb-fill"></div></div>
+          </div>
+          <div class="skill-bar-item" data-pct="85">
+            <div class="sb-top"><span>Customer Relationship Management</span><span class="sb-pct">85%</span></div>
+            <div class="sb-track"><div class="sb-fill"></div></div>
+          </div>
+          <div class="skill-bar-item" data-pct="90">
+            <div class="sb-top"><span>Teamwork &amp; Collaboration</span><span class="sb-pct">90%</span></div>
+            <div class="sb-track"><div class="sb-fill"></div></div>
+          </div>
+        </div>
+        <div class="skills-col reveal-right">
+          <h4 class="skills-group-title">Tools &amp; Systems</h4>
+          <div class="skill-bar-item" data-pct="90">
+            <div class="sb-top"><span>Microsoft Office Suite</span><span class="sb-pct">90%</span></div>
+            <div class="sb-track"><div class="sb-fill"></div></div>
+          </div>
+          <div class="skill-bar-item" data-pct="85">
+            <div class="sb-top"><span>Time Management</span><span class="sb-pct">85%</span></div>
+            <div class="sb-track"><div class="sb-fill"></div></div>
+          </div>
+          <div class="skill-bar-item" data-pct="82">
+            <div class="sb-top"><span>Problem Solving</span><span class="sb-pct">82%</span></div>
+            <div class="sb-track"><div class="sb-fill"></div></div>
+          </div>
+          <div class="skill-bar-item" data-pct="78">
+            <div class="sb-top"><span>Human Resources Fundamentals</span><span class="sb-pct">78%</span></div>
+            <div class="sb-track"><div class="sb-fill"></div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Soft Skills Cards -->
+      <div class="soft-skills reveal-up">
+        <div class="ss-card">
+          <div class="ss-icon">🎯</div>
+          <h5>Goal-Oriented</h5>
+          <p>Laser-focused on delivering results that matter</p>
+        </div>
+        <div class="ss-card">
+          <div class="ss-icon">🤝</div>
+          <h5>Collaborative</h5>
+          <p>Thrives in cross-functional team environments</p>
+        </div>
+        <div class="ss-card">
+          <div class="ss-icon">⚡</div>
+          <h5>Adaptable</h5>
+          <p>Excels in dynamic, fast-paced workplaces</p>
+        </div>
+        <div class="ss-card">
+          <div class="ss-icon">🔍</div>
+          <h5>Detail-Oriented</h5>
+          <p>Precision and accuracy in every deliverable</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CERTIFICATIONS ===== -->
+  <section id="certifications" class="dark-section">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <p class="sec-eyebrow">Continuous Learning</p>
+        <h2 class="sec-title">Certifications &amp; <span class="gold">Courses</span></h2>
+      </div>
+      <div class="cert-grid reveal-up">
+        <div class="cert-card">
+          <div class="cert-icon">📊</div>
+          <h5>Microsoft Office Essentials</h5>
+          <p>Advanced proficiency in Word, Excel, PowerPoint, and Outlook</p>
+        </div>
+        <div class="cert-card">
+          <div class="cert-icon">⭐</div>
+          <h5>Customer Service Excellence</h5>
+          <p>Delivering world-class customer experiences and retention strategies</p>
+        </div>
+        <div class="cert-card">
+          <div class="cert-icon">⏱️</div>
+          <h5>Time Management Skills</h5>
+          <p>Prioritization frameworks and productivity methodologies</p>
+        </div>
+        <div class="cert-card">
+          <div class="cert-icon">💬</div>
+          <h5>Effective Communication</h5>
+          <p>Professional workplace communication and stakeholder engagement</p>
+        </div>
+        <div class="cert-card">
+          <div class="cert-icon">👥</div>
+          <h5>Fundamentals of Human Resources</h5>
+          <p>Core HR principles, recruitment, and people management basics</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EDUCATION ===== -->
+  <section id="education">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <p class="sec-eyebrow">Academic Foundation</p>
+        <h2 class="sec-title">Education &amp; <span class="gold">Languages</span></h2>
+      </div>
+      <div class="edu-lang-grid">
+        <div class="edu-card reveal-left">
+          <div class="edu-icon">🎓</div>
+          <div class="edu-details">
+            <h3>Bachelor of Business Administration</h3>
+            <p class="edu-school">King Saud University</p>
+            <p class="edu-location">Riyadh, Saudi Arabia</p>
+            <span class="edu-year">2015 – 2019</span>
+          </div>
+          <div class="edu-badge">BBA</div>
+        </div>
+        <div class="lang-card reveal-right">
+          <h4 class="lang-title">Languages</h4>
+          <div class="lang-item">
+            <div class="lang-info">
+              <span class="lang-flag">🇸🇦</span>
+              <div>
+                <p class="lang-name">Arabic</p>
+                <p class="lang-level">Native Speaker</p>
+              </div>
+            </div>
+            <div class="lang-dots">
+              <span class="dot filled"></span><span class="dot filled"></span>
+              <span class="dot filled"></span><span class="dot filled"></span>
+              <span class="dot filled"></span>
+            </div>
+          </div>
+          <div class="lang-item">
+            <div class="lang-info">
+              <span class="lang-flag">🇬🇧</span>
+              <div>
+                <p class="lang-name">English</p>
+                <p class="lang-level">Professional Working Proficiency</p>
+              </div>
+            </div>
+            <div class="lang-dots">
+              <span class="dot filled"></span><span class="dot filled"></span>
+              <span class="dot filled"></span><span class="dot filled"></span>
+              <span class="dot"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact" class="dark-section">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <p class="sec-eyebrow">Let's Connect</p>
+        <h2 class="sec-title">Get In <span class="gold">Touch</span></h2>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info reveal-left">
+          <p class="contact-intro">
+            Ready to bring executive-level administrative excellence to your organization.
+            Reach out via any of the channels below.
+          </p>
+          <div class="ci-item">
+            <div class="ci-icon">📞</div>
+            <div><p class="ci-label">Phone</p><a href="tel:+966555555555">+966 555 555 555</a></div>
+          </div>
+          <div class="ci-item">
+            <div class="ci-icon">✉️</div>
+            <div><p class="ci-label">Email</p><a href="mailto:fahad.alqahtani.hr@gmail.com">fahad.alqahtani.hr@gmail.com</a></div>
+          </div>
+          <div class="ci-item">
+            <div class="ci-icon">📍</div>
+            <div><p class="ci-label">Location</p><span>Riyadh, Saudi Arabia</span></div>
+          </div>
+          <div class="contact-actions">
+            <a href="https://wa.me/966555555555" class="btn-whatsapp" target="_blank">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.135.562 4.14 1.54 5.875L0 24l6.294-1.512A11.95 11.95 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.819 9.819 0 01-5.007-1.371l-.36-.213-3.733.897.944-3.629-.234-.374A9.786 9.786 0 012.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/></svg>
+              WhatsApp
+            </a>
+            <a href="https://linkedin.com" class="btn-linkedin" target="_blank">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              LinkedIn
+            </a>
+          </div>
+        </div>
+        <div class="contact-form reveal-right">
+          <form id="contactForm">
+            <div class="form-group">
+              <input type="text" id="nameInput" placeholder="Your Name" required />
+            </div>
+            <div class="form-group">
+              <input type="email" id="emailInput" placeholder="Your Email" required />
+            </div>
+            <div class="form-group">
+              <input type="text" id="subjectInput" placeholder="Subject" />
+            </div>
+            <div class="form-group">
+              <textarea id="messageInput" rows="5" placeholder="Your Message" required></textarea>
+            </div>
+            <button type="submit" class="btn-primary full-width">Send Message</button>
+            <p class="form-success" id="formSuccess">✅ Message sent successfully!</p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="footer-inner">
+      <p class="footer-name">Fahad AlQahtani</p>
+      <p class="footer-copy">© 2024 All Rights Reserved · Riyadh, Saudi Arabia</p>
+    </div>
+  </footer>
+
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
